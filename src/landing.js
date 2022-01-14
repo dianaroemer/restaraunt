@@ -42,6 +42,7 @@ const landing = () => {
     boxContainer.appendChild(tagline);
 
     const enterButton = document.createElement('button');
+    enterButton.classList.add('enterButton');
     enterButton.innerText = "Enter";
     enterButton.style.fontSize = "18px";
     enterButton.style.marginTop = "3px";
