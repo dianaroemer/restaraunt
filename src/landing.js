@@ -11,17 +11,18 @@ const landing = () => {
 
     const landingContainerElement = document.createElement('div');
 
-    const content = document.createElement('div');
-    content.id = 'content';
-    content.style.position = "sticky";
-    content.style.top = "70px";
-    content.style.display = "flex";
-    content.style.justifyContent = "center";
+    // const content = document.createElement('div');
+    landingContainerElement.id = 'landingContainerElement';
+    landingContainerElement.style.position = "relative";
+    landingContainerElement.style.top = "70px";
+    landingContainerElement.style.display = "flex";
+    landingContainerElement.style.justifyContent = "center";
 
     const boxContainer = document.createElement('div');
     boxContainer.id = "box";
+    // boxContainer.style.top = "70px";
     boxContainer.style.textAlign = "center";
-    content.appendChild(boxContainer);
+    landingContainerElement.appendChild(boxContainer);
 
     const logoImage = document.createElement('img');
     logoImage.classList.add('logo-picture');
@@ -50,7 +51,7 @@ const landing = () => {
     boxContainer.appendChild(enterButton);
 
 
-    return content;
+    return landingContainerElement;
 
 }
 

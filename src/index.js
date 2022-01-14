@@ -18,9 +18,11 @@ import landing from './landing.js';
 // document.body.appendChild(component());
 
 
-document.body.removeChild(document.getElementById('content'));
+// document.body.removeChild(document.getElementById('content'));
 
-document.body.appendChild(landing());
+document.getElementById('content').appendChild(landing());
+
+// document.body.appendChild(landing());
 
 
 
