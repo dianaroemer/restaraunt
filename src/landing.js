@@ -6,6 +6,8 @@
 // }
 // export default myName;
 
+import Logo from './assets/logo.jpg'
+
 
 const landing = () => {
 
@@ -26,7 +28,8 @@ const landing = () => {
 
     const logoImage = document.createElement('img');
     logoImage.classList.add('logo-picture');
-    logoImage.src = './logo.jpg';
+    // logoImage.src = './logo.jpg';
+    logoImage.src = Logo;
     logoImage.alt = "A blue and white painted saign, saying 'Greek Corner Cafe'";
     logoImage.style.borderRadius = "50px";
     boxContainer.appendChild(logoImage);

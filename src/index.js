@@ -3,6 +3,7 @@ console.log("Bollocks");
 
 // import myName from './landing.js';
 import landing from './landing.js';
+// import Logo from './assets/logo.jpg';
 
 
 
