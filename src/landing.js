@@ -16,7 +16,7 @@ const landing = () => {
     // const content = document.createElement('div');
     landingContainerElement.id = 'landingContainerElement';
     landingContainerElement.style.position = "relative";
-    landingContainerElement.style.top = "70px";
+    // landingContainerElement.style.top = "70px";
     landingContainerElement.style.display = "flex";
     landingContainerElement.style.justifyContent = "center";
 
@@ -36,7 +36,7 @@ const landing = () => {
 
     const welcome = document.createElement('h2');
     welcome.classList.add('headLine');
-    welcome.innerHTML = 'Welcome to the Greek Corner Cafe!';
+    welcome.innerHTML = 'Welcome to the Soup and Soup Accessories!';
     boxContainer.appendChild(welcome);
     
     const tagline = document.createElement('h3');
