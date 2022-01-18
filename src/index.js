@@ -6,6 +6,21 @@ import landing from './landing.js';
 import './style.css';
 
 
+const hamburgerMenuContainer = document.createElement('div');
+hamburgerMenuContainer.classList.add('hamburger-menu-container');
+hamburgerMenuContainer.innerHTML = "Bollocks"
+document.getElementById('content-container').insertBefore(hamburgerMenuContainer, document.getElementById('content') );
+
+// const hamburgerMenuContainer2 = document.createElement('div');
+// hamburgerMenuContainer2.classList.add('hamburger-menu-container-2');
+// hamburgerMenuContainer2.innerHTML = "Bollocks"
+// document.getElementById('content-container').insertBefore(hamburgerMenuContainer2, document.getElementById('content') );
+
+
+document.getElementById('content').appendChild(landing());
+
+
+
 // function component() {
 //     const element = document.createElement('div');
 //     // const btn = 
@@ -20,7 +35,11 @@ import './style.css';
 
 // document.body.removeChild(document.getElementById('content'));
 
-document.getElementById('content').appendChild(landing());
+
+
+
+
+
 
 // document.body.appendChild(landing());
 

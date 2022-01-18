@@ -14,15 +14,35 @@
 
 }
 
+.hamburger-menu-container {
+    position: relative;
+    
+    background-color: pink;
+    height: 210px;
+    width: 70px;
+    border-radius: 7px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(92, 72, 72);
+    box-shadow: -1px 2px 7px rgb(92, 72, 72);
+    
+    left: 23%;
+    top: 70px;
+    z-index: 3;
+}
+
+
 #content {
     background-color: pink;
     box-shadow: 0px 5px 15px rgb(92, 72, 72);
     border-radius: 20px;
     padding: 3% 7% 3% 7%;
-    margin: 0 20% 0 20%;
+    margin: 50px calc(20% + 70px) 0 20%;
     min-width: 750px;
-    
 }
+
+
+
 
 .name-container {
     justify-content: center;

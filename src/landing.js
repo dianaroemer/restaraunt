@@ -6,7 +6,7 @@
 // }
 // export default myName;
 
-import Logo from './assets/logo.jpg'
+// import Logo from './assets/logo.jpg'
 import LadleImage from './assets/ladle.png'
 
 const landing = () => {
@@ -75,8 +75,6 @@ const landing = () => {
     // enterButton.style.borderRadius = "5px";
     // enterButton.style.boxShadow = "0px 2px 6px gray";
     // boxContainer.appendChild(enterButton);
-
-
 
 
     return landingContainerElement;
