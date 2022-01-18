@@ -5,16 +5,44 @@ console.log("Bollocks");
 import landing from './landing.js';
 import './style.css';
 
+import HomeImage from './assets/home.png'
+import MenuImage from './assets/menu.png'
+import ContactImage from './assets/contact.png'
+
+
 
 const hamburgerMenuContainer = document.createElement('div');
 hamburgerMenuContainer.classList.add('hamburger-menu-container');
-hamburgerMenuContainer.innerHTML = "Bollocks"
+// hamburgerMenuContainer.innerHTML = "Bollocks"
 document.getElementById('content-container').insertBefore(hamburgerMenuContainer, document.getElementById('content') );
 
-// const hamburgerMenuContainer2 = document.createElement('div');
-// hamburgerMenuContainer2.classList.add('hamburger-menu-container-2');
-// hamburgerMenuContainer2.innerHTML = "Bollocks"
-// document.getElementById('content-container').insertBefore(hamburgerMenuContainer2, document.getElementById('content') );
+
+const homeImage = document.createElement('img');
+homeImage.classList.add('hamburger-image');
+homeImage.id = "home-image"
+homeImage.src = HomeImage;
+homeImage.alt = "An image of a house, indicating home";
+// homeImage.classList.toggle('selected');
+hamburgerMenuContainer.appendChild(homeImage);
+
+const menuImage = document.createElement('img');
+menuImage.classList.add('hamburger-image');
+menuImage.id = "menu-image"
+menuImage.src = MenuImage;
+menuImage.alt = "An image of a fork and knife, indicating menu";
+hamburgerMenuContainer.appendChild(menuImage);
+
+const contactImage = document.createElement('img');
+contactImage.classList.add('hamburger-image');
+contactImage.id = "contact-image"
+contactImage.src = ContactImage;
+contactImage.alt = "An image of a phone, indicating navigation to the Contact page";
+hamburgerMenuContainer.appendChild(contactImage);
+
+
+
+
+
 
 
 document.getElementById('content').appendChild(landing());

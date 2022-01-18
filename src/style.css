@@ -17,19 +17,57 @@
 .hamburger-menu-container {
     position: relative;
     
-    background-color: pink;
-    height: 210px;
-    width: 70px;
+    /* background-color: pink; */
+    height: 180;
+    /* width: 70px; */
     border-radius: 7px;
-    border-style: solid;
-    border-width: 1px;
-    border-color: rgb(92, 72, 72);
+    /* border-style: solid; */
+    /* border-width: 1px; */
+    /* border-color: rgb(92, 72, 72); */
     box-shadow: -1px 2px 7px rgb(92, 72, 72);
     
     left: 23%;
     top: 70px;
     z-index: 3;
 }
+
+.hamburger-image {
+    
+    /* position: relative; */
+
+    background-color: pink;
+    width: 60px;
+    border-style:solid;
+    border-radius: 5px;
+    border-width: 1px;
+}
+
+.hamburger-image:hover {
+    transform: scale(1.1);
+    transition-duration: 120ms;
+}
+
+.hamburger-image.selected {
+    background-color: rgb(182, 98, 98);
+    transition-duration: 120ms;
+}
+/* 
+#home-image.selected {
+    background-color: rgb(182, 98, 98)
+}
+
+#menu-image.selected {
+    background-color: rgb(182, 98, 98)
+}
+
+#contact-image.selected {
+    background-color: rgb(182, 98, 98)
+} */
+
+
+
+
+
 
 
 #content {
