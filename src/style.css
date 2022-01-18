@@ -3,24 +3,18 @@
     src: url('./assets/fonts/montserrat/Montserrat-VariableFont_wght.ttf') format('truetype'),
     url('./assets/fonts/montserrat/Montserrat-Italic-VariableFont_wght.ttf') format('truetype');
     
-
-    /* src: url('./Montserrat-VariableFont_wght.ttf') formt('ttf'); */
-
     font-weight: 400;
     font-style: normal;
 }
 
 #content-container {
-
     font-family: 'Montserrat';
     display:flex;
     justify-content: center;
 
-
 }
 
 #content {
-
     background-color: pink;
     box-shadow: 0px 5px 15px rgb(92, 72, 72);
     border-radius: 20px;
@@ -28,11 +22,6 @@
     margin: 0 20% 0 20%;
     min-width: 750px;
     
-}
-
-
-#landingContainerElement {
-
 }
 
 .name-container {
@@ -62,10 +51,4 @@
     bottom:140px;
     width: 100px;
     transform: scaleX(-1);
-}
-
-#box {
-    /* display:flex; */
-    /* flex-direction: column; */
-
 }

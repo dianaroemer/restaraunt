@@ -66,15 +66,15 @@ const landing = () => {
     tagline.innerHTML = `We're absolutely super!`;
     boxContainer.appendChild(tagline);
 
-    const enterButton = document.createElement('button');
-    enterButton.classList.add('enterButton');
-    enterButton.innerText = "Enter";
-    enterButton.style.fontSize = "18px";
-    enterButton.style.marginTop = "3px";
-    enterButton.style.padding = "6px";
-    enterButton.style.borderRadius = "5px";
-    enterButton.style.boxShadow = "0px 2px 6px gray";
-    boxContainer.appendChild(enterButton);
+    // const enterButton = document.createElement('button');
+    // enterButton.classList.add('enterButton');
+    // enterButton.innerText = "Enter";
+    // enterButton.style.fontSize = "18px";
+    // enterButton.style.marginTop = "3px";
+    // enterButton.style.padding = "6px";
+    // enterButton.style.borderRadius = "5px";
+    // enterButton.style.boxShadow = "0px 2px 6px gray";
+    // boxContainer.appendChild(enterButton);
 
 
 
