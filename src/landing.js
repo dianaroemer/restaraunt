@@ -63,7 +63,7 @@ const landing = () => {
     
     const tagline = document.createElement('h3');
     tagline.classList.add('tagline');
-    tagline.innerHTML = `Man, this shit's the best in town.`;
+    tagline.innerHTML = `We're absolutely super!`;
     boxContainer.appendChild(tagline);
 
     const enterButton = document.createElement('button');
