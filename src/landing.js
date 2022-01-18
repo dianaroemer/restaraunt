@@ -7,7 +7,7 @@
 // export default myName;
 
 import Logo from './assets/logo.jpg'
-
+import LadleImage from './assets/ladle.png'
 
 const landing = () => {
 
@@ -26,13 +26,35 @@ const landing = () => {
     boxContainer.style.textAlign = "center";
     landingContainerElement.appendChild(boxContainer);
 
-    const logoImage = document.createElement('img');
-    logoImage.classList.add('logo-picture');
-    // logoImage.src = './logo.jpg';
-    logoImage.src = Logo;
-    logoImage.alt = "A blue and white painted saign, saying 'Greek Corner Cafe'";
-    logoImage.style.borderRadius = "50px";
-    boxContainer.appendChild(logoImage);
+    // const logoImage = document.createElement('img');
+    // logoImage.classList.add('logo-picture');
+    // // logoImage.src = './logo.jpg';
+    // logoImage.src = Logo;
+    // logoImage.alt = "A blue and white painted saign, saying 'Greek Corner Cafe'";
+    // logoImage.style.borderRadius = "50px";
+    // boxContainer.appendChild(logoImage);
+
+    const nameContainer = document.createElement('div');
+    nameContainer.classList.add('name-container');
+    boxContainer.appendChild(nameContainer);
+
+    const nameContent = document.createElement('div');
+    nameContent.classList.add("name-content");
+    nameContent.innerHTML = "Soup and Soup Accessories";
+    nameContainer.appendChild(nameContent);
+
+    const ladleImage = document.createElement('img');
+    ladleImage.classList.add('ladle-image-right');
+    ladleImage.src = LadleImage;
+    ladleImage.alt = "An image of a cartoon ladle"
+    nameContainer.appendChild(ladleImage);
+
+    const ladleImageLeft = document.createElement('img');
+    ladleImageLeft.classList.add('ladle-image-left');
+    ladleImageLeft.src = LadleImage;
+    ladleImageLeft.alt = "An image of a cartoon ladle"
+    nameContainer.appendChild(ladleImageLeft);
+
 
     const welcome = document.createElement('h2');
     welcome.classList.add('headLine');
@@ -53,6 +75,8 @@ const landing = () => {
     enterButton.style.borderRadius = "5px";
     enterButton.style.boxShadow = "0px 2px 6px gray";
     boxContainer.appendChild(enterButton);
+
+
 
 
     return landingContainerElement;

@@ -1,17 +1,59 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url('./assets/fonts/montserrat/Montserrat-VariableFont_wght.ttf') format('truetype'),
+    url('./assets/fonts/montserrat/Montserrat-Italic-VariableFont_wght.ttf') format('truetype');
+    
+
+    /* src: url('./Montserrat-VariableFont_wght.ttf') formt('ttf'); */
+
+    font-weight: 400;
+    font-style: normal;
+}
+
 #content {
     /* background-color: pink; */
     display:flex;
     justify-content: center;
+    font-family: 'Montserrat';
+
 }
 
 #landingContainerElement {
     background-color: pink;
     box-shadow: 0px 5px 15px rgb(92, 72, 72);
     border-radius: 20px;
-    
     margin: 0 20% 0 20%;
     padding: 3% 7% 3% 7%;
-
     min-width: 750px;
+}
+
+.name-container {
+    justify-content: center;
+    height: 200px;
+}
+
+.name-content {
+    font-size: 75px;
+}
+
+.ladle-image-right {
+    position:relative;
+    left: 330px;
+    bottom:140px;
+    width: 100px;
+    transform: rotate(0deg);
+}
+
+.ladle-image-left {
+    position:relative;
+    right: 330px;
+    bottom:140px;
+    width: 100px;
+    transform: scaleX(-1);
+}
+
+#box {
+    /* display:flex; */
+    /* flex-direction: column; */
 
 }
