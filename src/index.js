@@ -1,5 +1,3 @@
-console.log("Bollocks");
-
 
 // import myName from './landing.js';
 import landing from './landing.js';
@@ -11,33 +9,107 @@ import ContactImage from './assets/contact.png'
 
 
 
-const hamburgerMenuContainer = document.createElement('div');
-hamburgerMenuContainer.classList.add('hamburger-menu-container');
-// hamburgerMenuContainer.innerHTML = "Bollocks"
-document.getElementById('content-container').insertBefore(hamburgerMenuContainer, document.getElementById('content') );
 
 
-const homeImage = document.createElement('img');
-homeImage.classList.add('hamburger-image');
-homeImage.id = "home-image"
-homeImage.src = HomeImage;
-homeImage.alt = "An image of a house, indicating home";
-// homeImage.classList.toggle('selected');
-hamburgerMenuContainer.appendChild(homeImage);
 
-const menuImage = document.createElement('img');
-menuImage.classList.add('hamburger-image');
-menuImage.id = "menu-image"
-menuImage.src = MenuImage;
-menuImage.alt = "An image of a fork and knife, indicating menu";
-hamburgerMenuContainer.appendChild(menuImage);
 
-const contactImage = document.createElement('img');
-contactImage.classList.add('hamburger-image');
-contactImage.id = "contact-image"
-contactImage.src = ContactImage;
-contactImage.alt = "An image of a phone, indicating navigation to the Contact page";
-hamburgerMenuContainer.appendChild(contactImage);
+
+
+// const gameBoard = (() => {
+
+//     let _gameBoard = ["", "", "", "", "", "", "", "", ""];
+
+//     // Returns current gameBoard
+//     const getInfo = () => {
+//         return _gameBoard;
+//     }
+
+//     return {
+//         getInfo,
+//         updateGameBoard,
+//         resetGameBoard,
+//         logBoard, 
+//     }
+// })();
+
+const displayController = (() => {
+
+    let _sample = "what's happening";
+
+    const _hamburgerMenuContainer = document.createElement('div');
+    const _homeImage = document.createElement('img');
+    const _menuImage = document.createElement('img');
+    const _contactImage = document.createElement('img');
+
+    const init = () => {
+        _drawHamburgerMenu()
+        _addHamburgerEventListeners();
+        _homeImage.classList.toggle('selected');
+    }
+
+
+
+    const _drawHamburgerMenu = () => {
+        _hamburgerMenuContainer.classList.add('hamburger-menu-container');
+        // _hamburgerMenuContainer.innerHTML = "Bollocks"
+        document.getElementById('content-container').insertBefore(_hamburgerMenuContainer, document.getElementById('content') );
+                
+        _homeImage.classList.add('hamburger-image');
+        _homeImage.id = "home-image"
+        _homeImage.src = HomeImage;
+        _homeImage.alt = "An image of a house, indicating home";
+        // homeImage.classList.toggle('selected');
+        _hamburgerMenuContainer.appendChild(_homeImage);
+        
+        _menuImage.classList.add('hamburger-image');
+        _menuImage.id = "menu-image"
+        _menuImage.src = MenuImage;
+        _menuImage.alt = "An image of a fork and knife, indicating menu";
+        _hamburgerMenuContainer.appendChild(_menuImage);
+        
+        _contactImage.classList.add('hamburger-image');
+        _contactImage.id = "contact-image"
+        _contactImage.src = ContactImage;
+        _contactImage.alt = "An image of a phone, indicating navigation to the Contact page";
+        _hamburgerMenuContainer.appendChild(_contactImage);
+        
+    }
+
+    const _addHamburgerEventListeners = () => {
+        let imageArr = [_homeImage, _menuImage, _contactImage];
+        imageArr.forEach( element => {
+            element.addEventListener('click', () => {
+                _setImagesDeselected();
+                element.classList.toggle('selected');
+            
+            })
+        })
+    }
+
+    const _setImagesDeselected = () => {
+        _homeImage.classList.remove('selected');
+        _menuImage.classList.remove('selected');
+        _contactImage.classList.remove('selected');
+    }
+
+    const getInfo = () => {
+        console.log('This is displayControllers getInfo() ' + _sample)
+        return _sample;
+    }
+
+    return {
+        init,
+        getInfo,
+    }
+
+})();
+
+
+displayController.getInfo();
+displayController.init();
+
+console.log(displayController);
+
 
 
 
