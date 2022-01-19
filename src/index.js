@@ -1,6 +1,8 @@
 
 // import myName from './landing.js';
 import landing from './landing.js';
+import menu from './menu.js';
+import contact from './contact.js';
 import './style.css';
 
 import HomeImage from './assets/home.png'
@@ -41,10 +43,13 @@ const displayController = (() => {
     const _menuImage = document.createElement('img');
     const _contactImage = document.createElement('img');
 
+    const _content = document.getElementById('content');
+
     const init = () => {
         _drawHamburgerMenu()
         _addHamburgerEventListeners();
         _homeImage.classList.toggle('selected');
+        document.getElementById('content').appendChild(landing());
     }
 
 
@@ -79,8 +84,34 @@ const displayController = (() => {
         let imageArr = [_homeImage, _menuImage, _contactImage];
         imageArr.forEach( element => {
             element.addEventListener('click', () => {
+                
+                
                 _setImagesDeselected();
                 element.classList.toggle('selected');
+                console.log(element.id);
+                // console.log(element);
+                switch(element.id) {
+                    case 'home-image':
+                        console.log(_content.childNodes[1]);
+
+                        if(_content.childNodes) {
+                            _content.removeChild(_content.childNodes[1]);
+                            _content.appendChild(landing());
+                        }
+                        break;
+                    case 'menu-image':
+                        if(_content.childNodes) {
+                            _content.removeChild(_content.childNodes[1]);
+                            _content.appendChild(menu());
+                        }
+                        break;
+                    case 'contact-image':
+                        if(_content.childNodes) {
+                            _content.removeChild(_content.childNodes[1]);
+                            _content.appendChild(contact());
+                        }
+                        break;
+                }
             
             })
         })
@@ -117,7 +148,7 @@ console.log(displayController);
 
 
 
-document.getElementById('content').appendChild(landing());
+// document.getElementById('content').appendChild(landing());
 
 
 
