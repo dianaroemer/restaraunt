@@ -2,10 +2,10 @@
 
 const contact = () => {
     const contactContainer = document.createElement('div');
-    contactContainer.id = "menu-container";
+    contactContainer.id = "contact-container";
 
     const contactContent = document.createElement('div');
-    contactContent.classList.add('menu-content');
+    contactContent.classList.add('contact-content');
     contactContent.innerHTML = "Contact soup?"
 
     contactContainer.appendChild(contactContent);

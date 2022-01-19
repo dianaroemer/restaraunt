@@ -88,11 +88,11 @@ const displayController = (() => {
                 
                 _setImagesDeselected();
                 element.classList.toggle('selected');
-                console.log(element.id);
+                // console.log(element.id);
                 // console.log(element);
                 switch(element.id) {
                     case 'home-image':
-                        console.log(_content.childNodes[1]);
+                        // console.log(_content.childNodes[1]);
 
                         if(_content.childNodes) {
                             _content.removeChild(_content.childNodes[1]);
