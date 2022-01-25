@@ -147,7 +147,22 @@ const landing = () => {
     customerImage3.src = CustomerImage3;
     reviewContainer3.appendChild(customerImage3);
 
+    // Hours ----------------------------------------------
+
+    const hoursContainer = generateElement('div', null, 'hours-container');
+    boxContainer.appendChild(hoursContainer);
+
+    const hoursContent = generateElement('div', null, 'hours-content');
+    hoursContent.innerHTML = `<h3>HOURS:</h3>
+    MON-FRI: 9AM - 6PM <br>
+    SAT-SUN: 10AM - 8PM`;
     
+    hoursContainer.appendChild(hoursContent);
+
+
+
+
+
 
 
     return landingContainerElement;
