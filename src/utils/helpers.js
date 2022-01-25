@@ -21,4 +21,20 @@ const generateElement = (type, id , className) => {
 
 }
 
+// const generateElement2 = (obj) => {
+
+//     let element;
+
+//     obj[0];
+
+//     if(obj.type !== string) {
+//         console.log("ERROR: generateElement's type is not a string! " + obj.type );
+//         return ""
+//     }
+
+
+// }
+
+// let blerp = generateElement2({type:'div', id: 'sample', })
+
 export default generateElement;
