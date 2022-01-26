@@ -203,3 +203,59 @@
     border: 2px solid rgb(92, 72, 72);
     border-radius: 5px;
 }
+
+
+/* MENU STYLING ------------------------------------------------------------- */
+
+#menu-container {
+    width: 100%;
+}
+
+.header-signs-container {
+    /* display: flex; */
+}
+
+.header-signs-content {
+    display:flex;
+    justify-content: space-around;
+    flex: 1;
+}
+
+.header-sign {
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid rgb(92, 72, 72);
+    background-color:rgb(218, 140, 140);
+
+}
+
+#header-sign-1 {
+    display: flex;
+    justify-self: flex-end;
+    text-align: center;
+    flex-direction: column;
+    align-self: center;
+    padding-bottom: 17px;
+    /* background-color: grey; */
+}
+
+#header-sign-refuse {
+    color:red;
+    font-weight: 700;
+}
+
+#header-sign-anyone {
+    font-weight: 700;
+}
+
+#header-sign-know {
+    font-weight: 700;
+}
+
+.menu-title-container {
+    display: flex;
+    justify-content: center;
+}
+
+

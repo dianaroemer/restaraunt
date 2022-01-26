@@ -119,7 +119,7 @@ const landing = () => {
     "I told you not to say anything. You can't go in there, brazenly flaunt the rules, and then think I'm gonna share with you!" <br>
     "Do you hear yourself?" <br>
     "I'm sorry. This is what comes from living under a Flazi regime." <br>
-    "Well, I gotta go back there and try again..." `;
+    "Well, I gotta go back there and try again" `;
     reviewContainer2.appendChild(reviewContent2);
 
     const customerName2 = generateElement('div', 'customer-name-2', 'customer-name');
