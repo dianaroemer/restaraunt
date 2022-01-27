@@ -211,10 +211,6 @@
     width: 100%;
 }
 
-.header-signs-container {
-    /* display: flex; */
-}
-
 .header-signs-content {
     display:flex;
     justify-content: space-around;
@@ -227,6 +223,7 @@
     border-radius: 5px;
     border: 2px solid rgb(92, 72, 72);
     background-color:rgb(218, 140, 140);
+    box-shadow: 0px 0px 10px rgb(92, 72, 72);
 
 }
 
@@ -256,6 +253,85 @@
 .menu-title-container {
     display: flex;
     justify-content: center;
+    padding: 40 0 20 0;
+}
+
+.menu-title-content {
+    font-weight:700;
+    font-size: 50px;
 }
 
 
+/* Menu Content ------------------------------------------------------------- */
+
+.menu-content {
+    width: 100%;
+    /* display: flex; */
+}
+
+.menu-list-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu-list-left {
+    display:flex;
+    flex-direction: column;
+    width: 200px;
+}
+
+.menu-list-content {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.menu-list-right {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+}
+
+
+.soup-image {
+    width: 200px;
+    box-shadow: 0px 0px 10px rgb(92, 72, 72);
+    /* border: 2px solid rgb(92, 72, 72); */
+
+}
+
+
+#soup-mulligatawny {
+    /* width: 200px; */
+    border-radius: 5px 5px 0 0;
+}
+
+#soup-black-bean {
+    /* width: 200px; */
+}
+
+#soup-tomato-rice {
+    transform: scaleX(-1);
+    height: 200px;
+    object-fit: cover;
+    object-position: 100% 80%;
+}
+
+#soup-jambalaya {
+    border-radius: 5px 5px 0 0;
+    width: 200px;
+    height: 160px;
+    object-fit: cover;
+    object-position: 100% 70%;
+}
+
+#soup-french-onion {
+    height: 180px;
+    object-fit: cover;
+}
+
+#soup-clam-bisque {
+    height: 250px;
+    object-fit: cover;
+    border-radius: 0 0 5px 5px;
+}
