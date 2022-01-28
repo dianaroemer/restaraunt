@@ -284,6 +284,11 @@
     display: flex;
     justify-content: center;
     text-align: center;
+    background-color: rgb(218, 140, 140);
+    padding: 15px;
+    border-radius: 5px;
+    border: 2px solid rgb(92, 72, 72);
+    height: 450px;
 }
 
 .menu-list-right {
@@ -334,4 +339,19 @@
     height: 250px;
     object-fit: cover;
     border-radius: 0 0 5px 5px;
+}
+
+
+/* Contact Styling ------------------------------------------------------- */
+
+.contact-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.contact-content {
+    text-align: center;
+    padding-top: 12px;
+    padding-bottom: 5px;
 }
